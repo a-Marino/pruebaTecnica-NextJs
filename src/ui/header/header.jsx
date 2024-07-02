@@ -18,7 +18,7 @@ export default function Header() {
         <div className={styles.brand}>
           <Image
             alt="User profile picture"
-            src="/user-profile.png"
+            src="https://ibb.co/5k26Vxw"
             width={30}
             height={30}
             className={styles.image}
