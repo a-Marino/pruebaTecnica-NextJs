@@ -3,6 +3,8 @@
 import styles from './contact.module.css';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Contact() {
   const [name, setName] = useState('');
@@ -53,6 +55,13 @@ export default function Contact() {
 
     if (validateForm()) {
       console.log(`Name: ${name}, Email: ${email}, Text: ${text}`);
+      toast.success('Message sended successfully', {
+        position: 'bottom-right',
+        autoClose: 2000,
+        icon: false,
+        hideProgressBar: true,
+        className: 'success',
+      });
     }
   };
 
@@ -93,6 +102,7 @@ export default function Contact() {
         <span className={styles.error}>{errors['text']}</span>
         <button type="submit">Send</button>
       </form>
+      <ToastContainer closeButton={false} />
     </motion.section>
   );
 }

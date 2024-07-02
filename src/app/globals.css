@@ -11,6 +11,7 @@
   --primary: #006fee;
   --primary-500: #338ef7;
   --danger: #f31260;
+  --success: #17c964;
 }
 
 * {
@@ -85,4 +86,8 @@ textarea {
 .title {
   font-size: 4rem;
   font-weight: 600;
+}
+
+.success {
+  background-color: var(--success);
 }
