@@ -18,10 +18,11 @@ export default function Header() {
         <div className={styles.brand}>
           <Image
             alt="User profile picture"
-            src="https://ibb.co/5k26Vxw"
-            width={30}
-            height={30}
+            src="https://res.cloudinary.com/dv8nczwtj/image/upload/v1719888228/Screenshot_2024-07-01_202033_gly3aj.png"
+            width={10}
+            height={10}
             className={styles.image}
+            priority
           />
           Andres Marino
         </div>
