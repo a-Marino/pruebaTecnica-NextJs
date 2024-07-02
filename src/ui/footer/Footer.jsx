@@ -13,7 +13,7 @@ export default function Footer() {
           <Linkedin size={20} />
         </a>
         <a href="https://github.com/a-Marino" target="_blank">
-          <Github />
+          <Github size={20} />
         </a>
       </div>
     </footer>
